@@ -15,7 +15,7 @@ class Docent extends Migration
     {
       Schema::create('docenten', function (Blueprint $table) {
           $table->Uuid('id');
-          $table->id('school_id');
+          $table->string('school_id');
           $table->string('voornaam');
           $table->string('tussenvoegsel');
           $table->string('achternaam');

@@ -13,7 +13,7 @@ class CreateschoolTable extends Migration
      */
     public function up()
     {
-      $table->uuid('id');
+      $table->Uuid('id');
       $table->string('locatie');
       $table->integer('rating');
     }

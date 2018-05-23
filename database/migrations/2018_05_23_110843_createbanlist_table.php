@@ -13,7 +13,7 @@ class CreatebanlistTable extends Migration
      */
     public function up()
     {
-      $table->id('user_id');
+      $table->string('user_id');
       $table->string('email');
       $table->timestamps('timestamp');
     }

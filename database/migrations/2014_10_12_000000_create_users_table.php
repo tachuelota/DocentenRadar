@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->Uuid('id');
-            $table->id('school_id');
+            $table->string('school_id');
             $table->string('name');
             $table->string('voornaam');
             $table->string('tussenvoegsel');
@@ -25,8 +25,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('SocialeMedia')->nullable();
             $table->boolean('Verified')->nullable($value = true);
-            $table->integer('rechten')->nullable($value = true);
-            $table->integer('marks');
+            $table->double('rechten')->nullable($value = true);
+            $table->double('marks');
             //Fafo docent
             //Haat docent
             //Docent per catogorie gekozen!!
