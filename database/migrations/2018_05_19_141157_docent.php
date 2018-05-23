@@ -15,7 +15,10 @@ class Docent extends Migration
     {
       Schema::create('docenten', function (Blueprint $table) {
           $table->Uuid('id');
-          $table->string('Naam');
+          $table->id('school_id');
+          $table->string('voornaam');
+          $table->string('tussenvoegsel');
+          $table->string('achternaam');
           $table->string('Vak');
           $table->double('AvgCijfer')->nullable($value = 0);
           //Positie per catogorie!

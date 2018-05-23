@@ -15,9 +15,9 @@ class Comments extends Migration
     {
       Schema::create('comments', function (Blueprint $table) {
           $table->Uuid('id');
-          $table->string('comment');
-          $table->string('UuidUser');
-          $table->string('UuidDocent');
+          $table->string('content');
+          $table->string('user_id');
+          $table->string('docent_id');
           $table->double('Likes')->nullable($value = 0);
           $table->double('Reported')->nullable($value = 0);
           $table->rememberToken();
