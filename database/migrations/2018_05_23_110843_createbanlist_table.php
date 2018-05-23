@@ -13,9 +13,11 @@ class CreatebanlistTable extends Migration
      */
     public function up()
     {
-      $table->string('user_id');
-      $table->string('email');
-      $table->timestamps('timestamp');
+
+      Schema::create('CreatebanlistTable', function (Blueprint $table) {
+        $table->string('user_id');
+        $table->string('email');
+      });
     }
 
     /**
@@ -25,6 +27,7 @@ class CreatebanlistTable extends Migration
      */
     public function down()
     {
-        //
+
+          Schema::dropIfExists('CreatebanlistTable');
     }
 }

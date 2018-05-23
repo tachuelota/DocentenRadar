@@ -13,9 +13,12 @@ class CreateschoolTable extends Migration
      */
     public function up()
     {
-      $table->Uuid('id');
-      $table->string('locatie');
-      $table->integer('rating');
+
+      Schema::create('CreateschoolTable', function (Blueprint $table) {
+        $table->Uuid('id');
+        $table->string('locatie');
+        $table->integer('rating');
+      });
     }
 
     /**
@@ -25,6 +28,7 @@ class CreateschoolTable extends Migration
      */
     public function down()
     {
-        //
+
+        Schema::dropIfExists('CreateschoolTable');
     }
 }
