@@ -7,7 +7,7 @@ use Illuminate\Database\Migrations\Migration;
 class Meme extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations. KRIJG PIJN
      *
      * @return void
      */
